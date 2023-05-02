@@ -1,0 +1,197 @@
+body {
+    background-color: #262829;
+    color: #5FBFE9;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+img {
+    width: 200px;
+    padding: 15px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-nav {
+    padding: 15px;
+    text-align: flex-end;
+}
+
+.linkedin {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+.navBar {
+    color: #5FBFE9;
+    margin-left: -30px;
+    width: 100%;
+}
+
+.heroImg {
+    height: 200px;
+    padding: 25px;
+}
+
+.content {
+    justify-content: flex-start;
+}
+
+.social {
+    height: 45px;
+    width: 45px;
+}
+
+.workText {
+    text-align: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.myWork {
+    width: 100%;
+}
+
+.bpb {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+}
+
+.atc {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+}
+
+.m8 {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+}
+
+.fcc {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+}
+
+.skills {
+    text-align: center;
+}
+
+.figma {
+    height: 116px;
+    width: 47px;
+}
+
+.miro {
+    height: 116px;
+    width: 72px;
+}
+
+.ai {
+    height: 116px;
+    width: 73px;
+}
+
+.zoom {
+    height: 116px;
+    width: 72px;
+}
+
+.drive {
+    height: 116px;
+    width: 80px;
+}
+
+.office {
+    height: 118px;
+    width: 201px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 34% 32% 34%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "figma miro ai" "zoom drive office";
+    height: 690px;
+    padding: 20px;
+}
+
+.footer {
+    align-content: center;
+    margin: auto;
+    background-color: #444849;
+    color: #CCEFFF;
+}
+
+.footerGrid {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 40% 40% 20%;
+    grid-template-areas: "footerLeft footerRight footerSocials"
+}
+
+.linksGrid {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "Portfolio" "Resume" "About me" "Contact";
+}
+
+.footerLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.footerLeft {
+    border-right: 4px solid #CCEFFF;
+    padding-right: 204px;
+}
+
+@media only screen and (max-width: 600px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .bpb {
+        width: 100%;
+    }
+    .atc {
+        width: 100%;
+    }
+    .m8 {
+        width: 100%;
+    }
+    .fcc {
+        width: 100%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px;
+        grid-template-areas: "figma" "miro" "ai" "zoom" "drive" "office";
+    }
+}
